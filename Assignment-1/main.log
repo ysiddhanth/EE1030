@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.8)  10 AUG 2024 21:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.8)  15 AUG 2024 17:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1257,13 +1257,13 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 4
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-) (./main.aux)
+)
+No file main.aux.
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 49.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 49.
-
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
@@ -1390,8 +1390,6 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 49.
 LaTeX Info: Redefining \pageref on input line 49.
 LaTeX Info: Redefining \nameref on input line 49.
-
-(./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
@@ -1451,14 +1449,24 @@ L/txmi/m/it/12 ; \OMS/txsy/m/n/12 1\OT1/txr/m/n/12 )$, such that
 
 
 ] (./tables/table1.tex)
-(./tables/table2.tex) [2] (./main.aux)
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(./tables/table2.tex)
+Underfull \vbox (badness 1184) has occurred while \output is active []
+
+ [2]
+(./main.aux)
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 44517 strings out of 478287
- 1025872 string characters out of 5849290
- 1543472 words of memory out of 5000000
+ 44511 strings out of 478287
+ 1025818 string characters out of 5849290
+ 1543265 words of memory out of 5000000
  61922 multiletter control sequences out of 15000+600000
  529200 words of font info for 145 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1471,7 +1479,7 @@ onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 62623 bytes).
+Output written on main.pdf (2 pages, 62637 bytes).
 PDF statistics:
  159 PDF objects out of 1000 (max. 8388607)
  137 compressed objects within 2 object streams
