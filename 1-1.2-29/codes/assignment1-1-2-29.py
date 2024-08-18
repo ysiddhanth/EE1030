@@ -49,6 +49,7 @@ ax.spines['top'].set_color('none')
 ax.spines['left'].set_position('zero')
 ax.spines['right'].set_color('none')
 ax.spines['bottom'].set_position('zero')
+
 '''
 ax.spines['left'].set_visible(False)
 ax.spines['right'].set_visible(False)
@@ -58,8 +59,12 @@ plt.xlabel('$x$')
 plt.ylabel('$y$')
 plt.legend(loc='best')
 '''
+
 plt.grid() # minor
 plt.axis('equal')
+plt.xlabel('X-Axis', labelpad = 30)
+plt.ylabel('Y-Axis', labelpad = 15)
+plt.title('Plotting the Points', loc = 'right', pad = 15)
 
 plt.savefig('fig1.png')
 plt.show()
