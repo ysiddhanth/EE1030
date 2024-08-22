@@ -17,17 +17,15 @@ from line.funcs import *
 from triangle.funcs import *
 from conics.funcs import circ_gen
 
-I = np.eye(2)
-e1 = I[:,[0]]
-e2 = I[:,[1]]
-p = 0
 
+data = np.loadtxt("values.dat", skiprows=1)  # Skip the header row
 
-#Direction vector
+xc = data[0]
+yc = data[1]
 #Given points
 A = np.array(([5, -6])).reshape(-1,1) 
 B = np.array(([-1, -4])).reshape(-1,1) 
-C = np.array(([0, -(5.2/1.2)])).reshape(-1,1) 
+C = np.array(([xc, yc])).reshape(-1,1) 
 
 x_AB = line_gen(A,B)
 
