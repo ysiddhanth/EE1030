@@ -19,7 +19,7 @@ int main() {
 	M[1][1] = y1;
 	M[0][0] = x2;
 	M[1][0] = y2;
-	k[0][0] = (float)5/6;
+	k[0][0] = (float) 5/6;
 	k[1][0] = (float) 1/6;
 	C = Matmul(M,k,2,2,1);
 	FILE *file;

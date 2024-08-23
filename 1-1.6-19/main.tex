@@ -41,7 +41,7 @@
 \bibliographystyle{IEEEtran}
 \vspace{3cm}
 
-\title{1.1.6.19}
+\title{1.1.5.33}
 \author{EE24BTECH11059 - Yellanki Siddhanth
 }
 % \maketitle
@@ -68,7 +68,7 @@ The vectors $\lambda\hat{i} + \hat{j} +2\hat{k}$, $\hat{i} + \lambda\hat{j} - \h
       \input{tables/table1.tex}
       \caption{}
     \end{table}\\
-The rank of a matrix $M$ is the maximum number of linearly independent rows or columns in the matrix. If the rank of the matrix $M$ is 2, it means that there are only two linearly independent vectors in the set, and hence, the three vectors are coplanar (since the third vector is a linear combination of the first two).
+The rank of a matrix $M$ is less than 3, then the matrix is coplanar. For a rank 1 matrix, there is only one linearly independent column (or row), and all other columns (or rows) are linearly dependent on it.
     \begin{align}
         Rank(M) = 2\label{eq1.1.6.19.1}
     \end{align}
@@ -93,6 +93,7 @@ Therefore,
          \lambda = -2 \text{ or } \lambda = 1 \pm \sqrt{3}\label{eq1.1.6.19.6}
     \end{align}
     
+Verifying $\lambda = -2$
     \begin{figure}[h]
         \centering
        \includegraphics[width=0.7\linewidth]{figs/fig1.png}
@@ -101,16 +102,10 @@ Therefore,
     \end{figure}
     \begin{figure}[h]
         \centering
-       \includegraphics[width=0.7\linewidth]{figs/fig2.png}
+       \includegraphics[width=0.7\linewidth]{figs/fig1.png}
        \caption{}
        \label{graph}
     \end{figure}
-    \begin{figure}[h]
-        \centering
-       \includegraphics[width=0.7\linewidth]{figs/fig3.png}
-       \caption{}
-       \label{graph}
-    \end{figure}    
 \end{document}  
 
 

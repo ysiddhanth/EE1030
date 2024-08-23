@@ -18,9 +18,9 @@ from line.funcs import *
 from triangle.funcs import *
 from conics.funcs import circ_gen
 
-
-#Given points
-k = -2
+roots = np.loadtxt("lambda.dat")
+#roots are roots[0] = -2; roots[1] and roots[2]
+k = roots[0]
 A = np.array(([k, 1,2])).reshape(-1,1) 
 B = np.array(([1,k, -1])).reshape(-1,1)  
 C = np.array(([2,-1, k])).reshape(-1,1)  
