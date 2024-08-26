@@ -68,32 +68,31 @@ The vectors $\lambda\hat{i} + \hat{j} +2\hat{k}$, $\hat{i} + \lambda\hat{j} - \h
       \input{tables/table1.tex}
       \caption{}
     \end{table}\\
-The rank of a matrix $M$ is less than 3, then the matrix is coplanar. For a rank 1 matrix, there is only one linearly independent column (or row), and all other columns (or rows) are linearly dependent on it.
+The rank of a matrix $M$ is less than 3, then the matrix is coplanar. 
     \begin{align}
-        Rank(M) = 2\label{eq1.1.6.19.1}
+        Rank\brak{M} = 2\label{eq1.1.6.19.1}
     \end{align}
 Equivalently,
     \begin{align}
-        |M| = 0 \label{eq1.1.6.19.2}
+        \abs{M} = 0 \label{eq1.1.6.19.2}
     \end{align}
     \begin{align}
-        |M| = \begin{vmatrix}\lambda & 1 & 2 \\ 1 & \lambda & -1 \\ 2 & -1 & \lambda\end{vmatrix}=0\label{eq1.1.6.19.3}
+        \abs{M} = \myvec{\lambda & 1 & 2 \\ 1 & \lambda & -1 \\ 2 & -1 & \lambda} = 0 \label{eq1.1.6.19.3}
     \end{align}
     \begin{align}
-        \lambda(\lambda^2 - 1) - 1(\lambda+2) + 2(-1-2\lambda) = 0  \label{eq1.1.6.19.4}
+        \lambda\brak{\lambda^2 - 1} - 1\brak{\lambda+2} + 2\brak{-1-2\lambda} = 0  \label{eq1.1.6.19.4}
     \end{align}
     \begin{align}
         \lambda^3 - 6\lambda - 4 = 0  \label{eq1.1.6.19.5}
     \end{align}
     \begin{align}
-        (\lambda + 2)(\lambda^2 - 2\lambda - 2) = 0  \label{eq1.1.6.19.6}
+        \brak{\lambda + 2}\brak{\lambda^2 - 2\lambda - 2} = 0  \label{eq1.1.6.19.6}
     \end{align}
-Therefore,
     \begin{align}
          \lambda = -2 \text{ or } \lambda = 1 \pm \sqrt{3}\label{eq1.1.6.19.6}
     \end{align}
     
-Verifying $\lambda = -2$
+$\therefore$ Verifying $\lambda$ values:
     \begin{figure}[h]
         \centering
        \includegraphics[width=0.7\linewidth]{figs/fig1.png}
@@ -102,11 +101,18 @@ Verifying $\lambda = -2$
     \end{figure}
     \begin{figure}[h]
         \centering
-       \includegraphics[width=0.7\linewidth]{figs/fig1.png}
+       \includegraphics[width=0.7\linewidth]{figs/fig2.png}
+       \caption{}
+       \label{graph}
+    \end{figure}
+    \begin{figure}[h]
+        \centering
+       \includegraphics[width=0.7\linewidth]{figs/fig3.png}
        \caption{}
        \label{graph}
     \end{figure}
 \end{document}  
+
 
 
 
