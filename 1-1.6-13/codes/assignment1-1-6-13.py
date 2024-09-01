@@ -66,5 +66,5 @@ plt.xlabel('$X$-Axis')
 plt.ylabel('$Y$-Axis')
 plt.grid() # minor
 plt.axis('equal')
-plt.title('Showing that A,B,C are collinear', loc = 'right', pad = 15)
+plt.title('Showing that A,B,C are not collinear', loc = 'right', pad = 15)
 plt.show()
