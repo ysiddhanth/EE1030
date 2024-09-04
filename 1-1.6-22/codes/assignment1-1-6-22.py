@@ -17,12 +17,14 @@ from mpl_toolkits.mplot3d import Axes3D
 from line.funcs import *
 from triangle.funcs import *
 from conics.funcs import circ_gen
-
-
+data = np.genfromtxt('values.dat', delimiter=' ', names=True)
+x = data['x']
+y = data['y']
+z = data['z']
 #Given points
-A = np.array(([2, -3,4])).reshape(-1,1) 
-B = np.array(([-1, 2,1])).reshape(-1,1) 
-C = np.array(([0,1/3, 2])).reshape(-1,1)  
+A = np.array(([x[0], y[0],z[0]])).reshape(-1,1) 
+B = np.array(([x[1], y[1],z[1]])).reshape(-1,1) 
+C = np.array(([x[2], y[2],z[2]])).reshape(-1,1) 
 
 
 # Create a figure and a 3D Axes
