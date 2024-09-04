@@ -18,34 +18,34 @@ from line.funcs import *
 from triangle.funcs import *
 from conics.funcs import circ_gen
 data = np.genfromtxt('values.dat', delimiter=' ', names=True)
-x = data['x']
-y = data['y']
-z = data['z']
+xab = data['xab']
+yab = data['yab']
+zab = data['zab']
+xbc = data['xbc']
+ybc = data['ybc']
+zbc = data['zbc']
+xca = data['xca']
+yca = data['yca']
+zca = data['zca']
 #Given points
-A = np.array(([x[0], y[0],z[0]])).reshape(-1,1) 
-B = np.array(([x[1], y[1],z[1]])).reshape(-1,1) 
-C = np.array(([x[2], y[2],z[2]])).reshape(-1,1) 
-
+A = np.array(([xab[0], yab[0],zab[0]])).reshape(-1,1) 
+B = np.array(([xbc[0], ybc[0],zbc[0]])).reshape(-1,1) 
+C = np.array(([xca[0], yca[0],zca[0]])).reshape(-1,1) 
+ABmid = np.vstack(([xab, yab,zab]))
+BCmid = np.vstack(([xbc, ybc,zbc]))
+ACmid = np.vstack(([xca, yca,zca]))
 
 # Create a figure and a 3D Axes
 fig = plt.figure(figsize=(8, 6))
 ax = fig.add_subplot(111, projection='3d')
 
-#Generating all lines
-x_BC = line_gen(B,C)
-x_AB = line_gen(B,A)
-x_AC = line_gen(A,C)
-
-
-#Plotting all lines
-ax.plot(x_BC[0,:],x_BC[1,:], x_BC[2,:],label='$BC$')
-ax.plot(x_AB[0,:],x_AB[1,:], x_AB[2,:],label='$AB$')
-ax.plot(x_AC[0,:],x_AC[1,:], x_AC[2,:],label='$AC$')
 
 # Scatter plot
 colors = np.arange(1, 4)  # Example colors
 tri_coords = np.block([A, B, C])  # Stack A, B, C vertically
 ax.scatter(tri_coords[0, :], tri_coords[1, :], tri_coords[2, :], c=colors)
+ax.scatter(BCmid[0, :], BCmid[1, :], BCmid[2, :], c = "black")
+ax.scatter(ACmid[0, :], ACmid[1, :], ACmid[2, :], c = "black")
 vert_labels = ['A', 'B', 'C']
 
 for i, txt in enumerate(vert_labels):
