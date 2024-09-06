@@ -36,77 +36,77 @@
 \usepackage{ifthen}                                           
 \usepackage{lscape}
 \begin{document}
-
-\bibliographystyle{IEEEtran}
-\vspace{3cm}
-
-\title{1.1.8.28}
-\author{EE24BTECH11059 - Yellanki Siddhanth
-}
-% \maketitle
-% \newpage
-% \bigskip
-{\let\newpage\relax\maketitle}
-
-\renewcommand{\thefigure}{\theenumi}
-\renewcommand{\thetable}{\theenumi}
-\setlength{\intextsep}{10pt} % Space between text and floats
-
-
-\numberwithin{equation}{enumi}
-\numberwithin{figure}{enumi}
-\renewcommand{\thetable}{\theenumi}
-
-
-\textbf{Question}:\\
-Find the equation of the set of the points $P$ such that its distances from the points
-$A\brak{3, 4, -5}$ and $B\brak{-2, 1, 4}$ are equal.
-\\ \textbf{Solution: }\\
-    \begin{table}[h!]    
-      \centering
-      \input{tables/table1.tex}
-      \caption{}
-    \end{table}\\
-If \textbf{O} is equidistant from the points \textbf{A} and \textbf{B}
-    \begin{align}
-        \abs{\abs{\boldsymbol{O}-\boldsymbol{A}}} = \abs{\abs{\boldsymbol{O}-\boldsymbol{B}}}\\ \label{eq1.1.8.28.1}
-    \end{align}
-     \begin{align}
-        \abs{\abs{\boldsymbol{O}-\boldsymbol{A}}}^2 = \abs{\abs{\boldsymbol{O}-\boldsymbol{B}}}^2\label{eq1.1.8.28.2}\\
-    \end{align}
-    \begin{align}
-    	\abs{\abs{\boldsymbol{O}}}^2 - 2\boldsymbol{O}^\top \boldsymbol{A} + \abs{\abs{\boldsymbol{A}}}^2 = \abs{\abs{\boldsymbol{O}}}^2 - 2\boldsymbol{O}^\top\boldsymbol{B} + \abs{\abs{\boldsymbol{B}}}^2\label{eq1.1.8.28.3}
-    \end{align}
-By simplifying further,
-    \begin{align}
-    	\brak{\boldsymbol{A}-\boldsymbol{B}}^\top O = \frac{\abs{\abs{\boldsymbol{A}}}^2-\abs{\abs{\boldsymbol{B}}}^2}{2} \label{eq1.1.8.28.4}
-    \end{align}
-The above equation is the general expression for the perpendicular bisecting plane between any points $\boldsymbol{A}$ and $\boldsymbol{B}$.\\
-Substituting the $\boldsymbol{A}$ and $\boldsymbol{B}$ values in the derived equation.\\
-    \begin{align}
-    	\myvec{5 \\ 3 \\ -9}^\top O = \frac{\abs{\abs{\myvec{3 \\ 4\\-5}}}^2-\abs{\abs{\myvec{-2\\ 1\\4}}}^2}{2} = \frac{29}{2}\label{eq1.1.8.28.5}
-    \end{align}
-Comparing with $n^\top x = c$
-    \begin{align}
-    	\boldsymbol{n} = \myvec{5 \\ 3 \\ -9}\\ \label{eq1.1.8.28.6}
-	    \boldsymbol{c} = \frac{29}{2}\\    
-    \end{align}
-Final Plane equation is:
-
+	
+	\bibliographystyle{IEEEtran}
+	\vspace{3cm}
+	
+	\title{1.1.8.28}
+	\author{EE24BTECH11059 - Yellanki Siddhanth
+	}
+	% \maketitle
+	% \newpage
+	% \bigskip
+	{\let\newpage\relax\maketitle}
+	
+	\renewcommand{\thefigure}{\theenumi}
+	\renewcommand{\thetable}{\theenumi}
+	\setlength{\intextsep}{10pt} % Space between text and floats
+	
+	
+	\numberwithin{equation}{enumi}
+	\numberwithin{figure}{enumi}
+	\renewcommand{\thetable}{\theenumi}
+	
+	
+	\textbf{Question}:\\
+	Find the equation of the set of the points $P$ such that its distances from the points
+	$A\brak{3, 4, -5}$ and $B\brak{-2, 1, 4}$ are equal.
+	\\ \textbf{Solution: }\\
+	\begin{table}[h!]    
+		\centering
+		\input{tables/table1.tex}
+		\caption{}
+	\end{table}\\
+	If \textbf{O} is equidistant from the points \textbf{A} and \textbf{B}
 	\begin{align}
-		Plane \equiv 5x + 3y - 9z = 14.5
+		\abs{\abs{\vec{O}-\vec{A}}} = \abs{\abs{\vec{O}-\vec{B}}}\\ \label{eq1.1.8.28.1}
+	\end{align}
+	\begin{align}
+		\abs{\abs{\vec{O}-\vec{A}}}^2 = \abs{\abs{\vec{O}-\vec{B}}}^2\label{eq1.1.8.28.2}\\
+	\end{align}
+	\begin{align}
+		\abs{\abs{\vec{O}}}^2 - 2\vec{O}^\top \vec{A} + \abs{\abs{\vec{A}}}^2 = \abs{\abs{\vec{O}}}^2 - 2\vec{O}^\top\vec{B} + \abs{\abs{\vec{B}}}^2\label{eq1.1.8.28.3}
+	\end{align}
+	By simplifying further,
+	\begin{align}
+		\brak{\vec{A}-\vec{B}}^\top O = \frac{\abs{\abs{\vec{A}}}^2-\abs{\abs{\vec{B}}}^2}{2} \label{eq1.1.8.28.4}
+	\end{align}
+	The above equation is the general expression for the perpendicular bisecting plane between any points $\vec{A}$ and $\vec{B}$.\\
+	Substituting the $\vec{A}$ and $\vec{B}$ values in the derived equation.\\
+	\begin{align}
+		\myvec{5 \\ 3 \\ -9}^\top O = \frac{\abs{\abs{\myvec{3 \\ 4\\-5}}}^2-\abs{\abs{\myvec{-2\\ 1\\4}}}^2}{2} = \frac{29}{2}\label{eq1.1.8.28.5}
+	\end{align}
+	Comparing with $n^\top x = c$
+	\begin{align}
+		\vec{n} = \myvec{5 \\ 3 \\ -9}\\ \label{eq1.1.8.28.6}
+		\vec{c} = \frac{29}{2}\\    
+	\end{align}
+	Final Plane equation is:
+	
+	\begin{align}
+		Plane \equiv \myvec{5 \\ 3 \\ -9}^\top\myvec{\vec{x} \\ \vec{y} \\ \vec{z}}= \myvec{14.5}
 	\end{align}    
-    
-
-    \begin{figure}[h]
-        \centering
-       \includegraphics[width=0.7\linewidth]{figs/fig1.png}
-       \caption{}
-       \label{graph}
-    \end{figure}
-
-
-
+	
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.7\linewidth]{figs/fig1.png}
+		\caption{}
+		\label{graph}
+	\end{figure}
+	
+	
+	
 \end{document}  
 
 
