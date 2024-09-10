@@ -29,17 +29,22 @@ B = np.array(([x[31], y[31]])).reshape(-1,1)
 AB = np.vstack(([x, y]))
 colors = np.arange(1,3)
 #Labeling the coordinates
-quad_coords = np.block([A,B])
-plt.scatter(quad_coords[0,:], quad_coords[1,:], c=colors)
-plt.scatter(AB[0, :], AB[1, :], c = "blue")
+tri_coords = np.block([A,B])
+plt.scatter(tri_coords[0,:], tri_coords[1,:], c=colors)
+plt.plot(AB[0, :], AB[1, :], label='$AB$')
 vert_labels = ['A','B']
-for i, txt in enumerate(vert_labels):
-    #plt.annotate(txt, # this is the text
-    plt.annotate(f'{txt}\n({quad_coords[0,i]:.2f}, {quad_coords[1,i]:.2f})',
-                 (quad_coords[0,i], quad_coords[1,i]), # this is the point to label
-                 textcoords="offset points", # how to position the text
-                 xytext=(-10,-5), # distance from text to points (x,y)
-                 ha='right') # horizontal alignment can be left, right or center
+'''
+plt.annotate(f'A\n({tri_coords[0,0]:.2f}, {tri_coords[1,0]:.2f})',
+              (tri_coords[0,0], tri_coords[1,0]), # this is the point to label
+              textcoords="offset points", # how to position the text
+              xytext=(25,5), # distance from text to points (x,y)
+              ha='center') # horizontal alignment can be left, right or center
+plt.annotate(f'B\n({tri_coords[0,1]:.2f}, {tri_coords[1,1]:.2f})',
+              (tri_coords[0,1], tri_coords[1,1]), # this is the point to label
+              textcoords="offset points", # how to position the text
+              xytext=(25,5), # distance from text to points (x,y)
+              ha='center') # horizontal alignment can be left, right or center
+'''
 
 # use set_position
 ax = plt.gca()

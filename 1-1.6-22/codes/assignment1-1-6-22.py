@@ -44,8 +44,8 @@ ax = fig.add_subplot(111, projection='3d')
 colors = np.arange(1, 4)  # Example colors
 tri_coords = np.block([A, B, C])  # Stack A, B, C vertically
 ax.scatter(tri_coords[0, :], tri_coords[1, :], tri_coords[2, :], c=colors)
-ax.scatter(BCmid[0, :], BCmid[1, :], BCmid[2, :], c = "black")
-ax.scatter(ACmid[0, :], ACmid[1, :], ACmid[2, :], c = "black")
+ax.plot(BCmid[0, :], BCmid[1, :], BCmid[2, :], label='$BC$')
+ax.plot(ACmid[0, :], ACmid[1, :], ACmid[2, :], label = '$AC$')
 vert_labels = ['A', 'B', 'C']
 
 for i, txt in enumerate(vert_labels):

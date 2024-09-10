@@ -1,18 +1,10 @@
 import sympy as sp
-
-# Define the symbolic variable lambda
 λ = sp.symbols('λ')
 
-# Define the matrix A(λ)
 A = sp.Matrix([[λ, 1, 2], [1, λ, -1], [2, -1, λ]])
-
-# Calculate the determinant of A
 det_A = A.det()
 
-# Solve the equation det(A) = 0 for λ
 lambda_solutions = sp.solve(det_A, λ)
-
-# Convert the solutions to numpy format (numerical form)
 numeric_solutions = [sp.N(sol) for sol in lambda_solutions]
 
 # Print the numeric solutions using numpy's sqrt function format
