@@ -27,12 +27,10 @@ int calculateRank(float **M, int m, int n) {
                 break;
             }
         }
-
         // If the row is entirely zero, skip it
         if (non_zero_column == -1) {
             continue;
         }
-
         // Increment rank since this row contributes to the rank
         rank++;
 

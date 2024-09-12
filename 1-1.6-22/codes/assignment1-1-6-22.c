@@ -40,6 +40,11 @@ int main() {
 	calcpoints(A,B,AB);
         calcpoints(B,C,BC);
 	calcpoints(C,A,CA);
+	
+	
+	
+	
+	
 	FILE *file;
 	file = fopen("values.dat", "w");
 
@@ -59,3 +64,7 @@ int main() {
 	freeMat(AB,3);
 	return 0;
 }
+
+
+
+

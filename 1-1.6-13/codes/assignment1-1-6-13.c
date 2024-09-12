@@ -20,6 +20,7 @@ int main() {
 	B[1][0] = -9;
 	C[0][0] = 3;
 	C[1][0] = 6;
+	
 	FILE *file;
 	file = fopen("values.dat", "w");
 
