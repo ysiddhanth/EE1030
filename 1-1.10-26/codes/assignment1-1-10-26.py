@@ -31,12 +31,14 @@ fig = plt.figure(figsize=(8, 6))
 ax = fig.add_subplot(111, projection='3d')
 
 # Plot vectors
-ax.quiver(*origin, *A, color='r', arrow_length_ratio=0.1)  # Adjusted arrow length ratio
-ax.quiver(*origin, *B, color='g', arrow_length_ratio=0.1)  # Adjusted arrow length ratio
+#ax.quiver(*origin, *A, color='r', arrow_length_ratio=0.1)  # Adjusted arrow length ratio
+#ax.quiver(*origin, *B, color='g', arrow_length_ratio=0.1)  # Adjusted arrow length ratio
 ax.quiver(*origin, *C, color='b', arrow_length_ratio=0.1)  # Adjusted arrow length ratio
+ax.plot([0, xx[0]], [0, yy[0]], [0, zz[0]], 'r--', linewidth=1)
+ax.plot([0, xx[1]], [0, yy[1]], [0, zz[1]], 'g--', linewidth=1)
 ax.text(xx[0], yy[0], zz[0], 'A', color='red', fontsize=12)
 ax.text(xx[1], yy[1], zz[1], 'B', color='green', fontsize=12)
-ax.text(xx[2], yy[2], zz[2], 'C', color='blue', fontsize=12)
+ax.text(xx[2], yy[2], zz[2], 'C=A+B', color='blue', fontsize=12)
 # Set limits and aspect ratio
 ax.set_xlim(-10, 10)  # Adjust limits based on your data
 ax.set_ylim(-10, 10)  # Adjust limits based on your data
