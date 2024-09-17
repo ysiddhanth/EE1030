@@ -53,4 +53,5 @@ ax.set_zlabel('$Z$-Axis')
 plt.grid(True)
 plt.title('Unit Vector C in the direction of A+B ', loc='right', pad=15)
 plt.show()
+plt.savefig('../figs/fig.pdf')
 
