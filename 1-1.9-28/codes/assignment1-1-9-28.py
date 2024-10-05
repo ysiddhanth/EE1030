@@ -61,10 +61,11 @@ plt.xlabel('$x$')
 plt.ylabel('$y$')
 plt.legend(loc='best')
 '''
+plt.gca().set_aspect('equal', adjustable='box')
 
 plt.xlabel('$X$-Axis')
 plt.ylabel('$Y$-Axis')
-plt.grid() # minor
+plt.grid(True) # minor
 plt.axis('equal')
 plt.title('Calculating the distance 2AB', loc = 'right', pad = 15)
 plt.show()

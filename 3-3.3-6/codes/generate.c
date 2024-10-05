@@ -58,7 +58,4 @@ int main(void) {
     fclose(file);
     printf("Results have been written to values.dat\n");
     return 0;
-    
-
-    return 0;
 }
