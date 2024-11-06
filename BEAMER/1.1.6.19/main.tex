@@ -118,7 +118,7 @@ The vectors $\lambda\hat{i} + \hat{j} +2\hat{k}$, $\hat{i} + \lambda\hat{j} - \h
 	\frametitle{Method of Solving}
 	The rank of a matrix $M$ is less than 3, then the matrix is coplanar. 
 	\begin{align}
-		Rank\brak{M} = 2\label{eq1.1.6.19.1}
+		Rank\brak{M} = 2 \text{ or } 1\label{eq1.1.6.19.1}
 	\end{align}
 	Equivalently,
 	\begin{align}
@@ -282,7 +282,7 @@ The vectors $\lambda\hat{i} + \hat{j} +2\hat{k}$, $\hat{i} + \lambda\hat{j} - \h
 \end{frame}
 \begin{frame}[fragile]
 	\frametitle{Methods of Finding $\lambda$}
-	\textbf{Method 2(using numpy) : } 
+	\textbf{Method 2(using the QR algorithm(numpy or C)) : } 
 	\begin{align}
 		\abs{M} = \myvec{\lambda & 1 & 2 \\ 1 & \lambda & -1 \\ 2 & -1 & \lambda} = \myvec{0 & 1 & 2 \\ 1 & 0 & -1 \\ 2 & -1 & 0} + \lambda I = \abs{A + \lambda I}
 	\end{align}
