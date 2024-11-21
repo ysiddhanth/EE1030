@@ -82,16 +82,21 @@
 	\label{tab1-1.9-6}
 \end{table}\\
 
-First we find the $V, u, f$ for the actual ellipse using the following formulas: 
+First we find the second order equation of the actual ellipse using the eccentricity definition.\\
+Let \(P\myvec{x\\y}\) be any point on the ellipse and PM be the perpendicular from P on the directrix. Then,
 \begin{align}
-	\vec{V} &=\norm{\vec{n}}^2\vec{I}-e^2\vec{n}\vec{n}^{\top}, 
-	\\
-	\vec{u} &= ce^2\vec{n}-\norm{\vec{n}}^2\vec{F}, 
-	\\
-	f &= \norm{\vec{n}}^2\norm{\vec{F}}^2-c^2e^2
+	FP &= e \times PM\\
+	FP &= \frac{1}{2} \times PM\\
+	2FP &= PM\\
+	4(FP)^2 &= PM^2\\
+	4\sbrak{\brak{x+1}^2 + \brak{y-1}^2} &= \brak{\frac{x - y + 3}{\sqrt{1^2 + (-1)^2}}}^2\\
+	4\sbrak{\brak{x+1}^2 + \brak{y-1}^2}  &= \brak{\frac{x - y + 3}{\sqrt{2}}}^2
 \end{align}
-
-Upon solving, we get:
+Upon simplification, we get the second order two variable conic equation to be,
+\begin{align}
+	\frac{7}{4}\brak{x^2+y^2} + \frac{1}{2}xy + \frac{5}{2}\brak{-x+y} + \frac{7}{4} = 0 \label{acconiceq}
+\end{align}
+Comparing \eqref{acconiceq} with $x^\top\vec{V}x + 2\vec{u}^\top x + f = 0$, we get:
 \begin{align}
 	\vec{V} &= \myvec{\frac{7}{4} & \frac{1}{4} \\ \frac{1}{4} & \frac{7}{4}} ,
 	\\
@@ -161,7 +166,8 @@ By definition $\vec{P} = \sbrak{\vec{p_1} ~ \vec{p_2}}$ \\
 \begin{align}
 	\vec{P} = \myvec{ - \frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} } \label{Rdef}
 \end{align}
-
+By comparing $\vec{P}$ with a standard rotation matrix, $\myvec{\cos\theta & -\sin\theta \\ \sin\theta & \cos\theta}$
+the angle of rotation of $\vec{P}$ is $\arccos\brak{- \frac{1}{\sqrt{2}}}$ or $\frac{3\pi}{4}$. \\\\
 Now, we will use Affine Transformations to get the standard ellipse equation.
 
 \begin{align}
@@ -185,14 +191,26 @@ Plotting the standard and the actual ellipse using python,
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.75\columnwidth]{Figures/fig1.png} 
+	\includegraphics[width=0.8\columnwidth]{Figures/fig1.png} 
 	\caption{}
 	\label{fig1}
 \end{figure} 
-
+To find the lengths of the semi-major and semi-minor axis, 
+\begin{align}
+	a &= \sqrt{\brak{\frac{f_0}{\lambda_1}}} =  \sqrt{\frac{2}{9}}\\
+	b &= \sqrt{\brak{\frac{f_0}{\lambda_2}}} = \sqrt{\frac{1}{6}}
+\end{align}
+Equations of the minor and major axis of the actual ellispe can be found with $p_i(x - c) = 0$, $i = 1, 2$ respectively \\ 
+\begin{align}
+	\text{Minor Axis} \equiv   \myvec{- \frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}}x = 0\\
+	\text{Major Axis} \equiv   \myvec{\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}}x = 0
+\end{align}
+The Latus rectum of the ellipse can be found with,
+\begin{align}
+	l = 2\frac{\sqrt{|f_0 \lambda_1|}}{\lambda_2} = \frac{1}{\sqrt{2}}
+\end{align}
 Code for Figure \ref{fig1} can be found at:
 \begin{lstlisting}
 codes/misc.py
 \end{lstlisting}
-
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.11.12)  21 NOV 2024 20:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.11.12)  21 NOV 2024 22:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1907,25 +1907,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--84
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
-
- []
+LaTeX Warning: Reference `acconiceq' on page 1 undefined on input line 99.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
 dist/fonts/enc/dvips/base/8r.enc}
 
 
 ]
-
-LaTeX Warning: Reference `Ddef' on page 2 undefined on input line 116.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--119
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--160
+LaTeX Warning: Reference `Ddef' on page 2 undefined on input line 121.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--124
 
  []
 
@@ -1933,17 +1930,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--160
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-<Figures/fig1.png, id=68, 462.528pt x 346.896pt>
+Underfull \hbox (badness 10000) in paragraph at lines 162--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--172
+
+ []
+
+<Figures/fig1.png, id=69, 462.528pt x 346.896pt>
 File: Figures/fig1.png Graphic file (type png)
 <use Figures/fig1.png>
-Package pdftex.def Info: Figures/fig1.png  used on input line 188.
-(pdftex.def)             Requested size: 273.14647pt x 204.868pt.
+Package pdftex.def Info: Figures/fig1.png  used on input line 194.
+(pdftex.def)             Requested size: 291.35735pt x 218.52974pt.
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 202--204
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ []
 
- [3]
 
-LaTeX Warning: Reference `fig1' on page 4 undefined on input line 193.
+LaTeX Warning: Reference `fig1' on page 4 undefined on input line 212.
 
 [4 <./Figures/fig1.png>] (./main.aux)
 
@@ -1962,10 +1969,10 @@ Package rerunfilecheck Info: Checksums for `main.out':
 (rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 52887 strings out of 476041
- 1246742 string characters out of 5793173
- 1878388 words of memory out of 6000000
- 72483 multiletter control sequences out of 15000+600000
+ 52897 strings out of 476041
+ 1246870 string characters out of 5793173
+ 1879388 words of memory out of 6000000
+ 72484 multiletter control sequences out of 15000+600000
  581517 words of font info for 171 fonts, out of 8000000 for 9000
  1140 hyphenation exceptions out of 8191
  109i,18n,107p,1194b,1018s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1976,10 +1983,10 @@ xmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (4 pages, 94093 bytes).
+Output written on main.pdf (4 pages, 99337 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
- 91 compressed objects within 1 object stream
- 35 named destinations out of 1000 (max. 500000)
+ 146 PDF objects out of 1000 (max. 8388607)
+ 104 compressed objects within 2 object streams
+ 44 named destinations out of 1000 (max. 500000)
  114 words of extra memory for PDF output out of 10000 (max. 10000000)
 
