@@ -27,9 +27,9 @@ y = np.linspace(-5,5,len)
 V = np.array(([7/4,1/4],[1/4,7/4]))
 u = np.array(([-5/4,5/4])).reshape(-1,1)
 f = 7/4
-n,c,F,O,lam,P,e = conic_param(V,u,f)
 ab = ellipse_param(V,u,f)
-
+n,c,F,O,lam,P,e = conic_param(V,u,f)
+print(ab)
 #Eigenvalues and eigenvectors
 print(lam, P,e, F,n,c)
 xStandard= ellipse_gen(ab[0],ab[1])
@@ -76,8 +76,8 @@ for i, txt in enumerate(vert_labels):
     plt.annotate(f'{txt}\n({tri_coords[0,i]:.2f}, {tri_coords[1,i]:.2f})',
                  (tri_coords[0,i], tri_coords[1,i]), # this is the point to label
                  textcoords="offset points", # how to position the text
-                 xytext=(-20,5), # distance from text to points (x,y)
-                 ha='center') # horizontal alignment can be left, right or center
+                 xytext=(20,0), # distance from text to points (x,y)
+                 ha='left') # horizontal alignment can be left, right or center
 
 # use set_position
 ax = plt.gca()

@@ -54,8 +54,12 @@ def parab_param(lam,P,u):
 #Standard ellipse/hyperbola parameters
 def ellipse_param(V,u,f):
     lam,P = LA.eig(V)
-    f0=u.T@LA.inv(V)@u-f
-    ab =np.sqrt(np.abs(f0/lam))
+    if lam[1]<=0 or lam[1] < lam[0]:
+        lam = lam@ref
+        P = P@ref
+    Vi = LA.inv(V)
+    f0=(u.T@Vi@u) - f
+    ab =np.sqrt(np.abs(f0/(lam)))
     return ab.flatten()
 
 #Generating points on a circle
