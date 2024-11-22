@@ -110,7 +110,7 @@ For Affine Transformation, we have to spectral / eigen decompose the matrix $\ve
 \begin{align}
 	\vec{V} = \vec{P}\vec{D}\vec{P^\top}
 \end{align}
-To find $\vec{D}$, we will have to find the eigen values of the matrx $\vec{V}$.
+To find $\vec{D}$, we will have to find the eigen values of the matrix $\vec{V}$.
 
 	\begin{align}
 		|\vec{V}  - \lambda\vec{I}|  &= 0,\\
@@ -118,7 +118,7 @@ To find $\vec{D}$, we will have to find the eigen values of the matrx $\vec{V}$.
 		\lambda_1, \lambda_2 &= \frac{3}{2} , 2\\
 		\therefore 	\vec{D} &= \myvec{\frac{3}{2} & 0 \\ 0 & 2	} , \label{Ddef}
 	\end{align}
-Note: In \eqref{Ddef}, the order of the eigen values that I have chosen is from smallest to biggest due to eccentricity calculation\\
+Note: In \eqref{Ddef}, the order of the eigen values that I have chosen is from smallest to biggest due to eccentricity calculation.\\
 \\
 Now, to find $\vec{P}$ which is the matrix containing the normalized eigen vectors. So we have to find the eigen-values.
 
@@ -126,7 +126,7 @@ Now, to find $\vec{P}$ which is the matrix containing the normalized eigen vecto
 
 \begin{align}
 	\vec{V}\vec{p_1^\prime} &= \lambda_1 \vec{p_1^\prime} \\
-	\myvec{\frac{7}{4} & \frac{1}{4} \\ \frac{1}{4} & \frac{7}{4}} \vec{p_1^\prime}  &= \frac{3}{2}\vec{p_2^\prime} \\
+	\myvec{\frac{7}{4} & \frac{1}{4} \\ \frac{1}{4} & \frac{7}{4}} \vec{p_1^\prime}  &= \frac{3}{2}\vec{p_1^\prime} \\
 \end{align}
 Taking an augmented matrix,
 \begin{align}
