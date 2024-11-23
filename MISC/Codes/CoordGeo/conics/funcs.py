@@ -100,10 +100,16 @@ def parab_gen(y,a):
 	return x
 
 #Generating points on a standard hyperbola 
-def hyper_gen(y):
-	x = np.sqrt(1+y**2)
-	return x
+def hyper_gen(a,b):
+    y = np.linspace(-5,5,50)
+    x = a*np.abs(np.sqrt(1+(y/b)**2))
+    xx = -a*np.abs(np.sqrt(1+(y/b)**2))
+    y[y == 5] = np.inf
+    y[y == -5] = -np.inf
+    X = np.vstack([np.vstack([x,y]).T,np.vstack([xx,y]).T]).T
+    return X
 
+    
 #Points of contact for a pair of tangents
 def contact(V,u,f,h):
     #intermediate
