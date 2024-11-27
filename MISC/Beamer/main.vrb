@@ -1,0 +1,12 @@
+\frametitle{Methods of Finding $\lambda$}
+	\textbf{Method 2(using the QR algorithm(numpy or C)) : }
+	\begin{align}
+		\abs{M} = \myvec{\lambda & 1 & 2 \\ 1 & \lambda & -1 \\ 2 & -1 & \lambda} = \myvec{0 & 1 & 2 \\ 1 & 0 & -1 \\ 2 & -1 & 0} + \lambda I = \abs{A + \lambda I}
+	\end{align}
+	Thus, the values of $\lambda$ are the negative of the eigen values of the matrix $A$.\\
+	\begin{lstlisting}[mathescape=true]
+		import numpy as np
+		A = np.array([[0, 1, 2], [1, 0. -1], [2, -1, 0]])
+		eigenvalues = np.linalg.eigvals(A)
+		$\lambda$-vals = -eigenvals
+	\end{lstlisting}
